@@ -18,7 +18,7 @@
         <!-- Menu Icon -->
         <i class='bx bx-menu' id="menu-icon"></i>
         <!-- Logo -->
-        <a href="#" class="logo">Sriwijaya<span>Autocar</span></a>
+        <a href="#" class="logo">Sriwijaya<span>Autocars</span></a>
         <!-- Nav  List-->
          <ul class="navbar">
           <li><a href="#home" class="active">Home</a></li>
@@ -38,8 +38,8 @@
     <!-- Home -->
     <section class="home" id="home">
       <div class="home-text">
-        <h1>Mobil Impian Terpercaya <br> <span>Harga Terjangkau <br></span> Kualitas Tinggi</h1>
-        <p>Komitmen Showroom dalam memberikan pengalmanan, <br> terbaik kepada pelanggan.</p>
+        <h1>Mobil Impian Terpercaya <br> <span>Harga Terjangkau <br></span> Kualitas Terbaik</h1>
+        <p>Komitmen Showroom dalam memberikan pengalaman dan terasa nyaman <br>terhadap pelanggan dengan memberikan pilihan unit terbaik, yang sudah <br>lolos uji inspeksi mesin, bebas kecelakaan dan banjir <br> terbaik kepada pelanggan.</p>
         <!-- Home Button -->
          <a href="#cars" class="btn">Discover Now</a>
       </div>
@@ -97,8 +97,8 @@
     </div>
     <div class="about-text">
       <span>About Us</span>
-      <h2>Showroom Sriwijaya Autocar</h2>
-      <p style="text-align: justify;">Sriwijaya Autocar adalah showroom mobil tercaya yang menyediakan berbagai pilihan kendaraan berkualitas tinggi dengan harga terjangkau. mengutamakan kepercayaan dan kepuasan pelanggan, Sriwijaya Autocar menawarkan mobil-mobil impian yang telah melalui proses inspeksi ketat, sehingga menjamin komitmen prima dan legalitas yang lengkap</p>
+      <h2>Showroom Sriwijaya Autocars</h2>
+      <p style="text-align: justify;">Sriwijaya Autocars adalah showroom mobil tercaya yang menyediakan berbagai pilihan kendaraan berkualitas terbaik dengan harga terjangkau. Mengutamakan kepercayaan dan kepuasan pelanggan, Sriwijaya Autocars menawarkan mobil-mobil impian yang telah melalui proses inspeksi ketat, sehingga menjamin komitmen prima dan legalitas yang lengkap.</p>
       <!-- About Button -->
       <!-- <a href="#" class="btn">Learn More</a> -->
     </div>
@@ -117,97 +117,98 @@
         <img src="img/part7.png" alt="Toyota Avanza 2019">
         <h3>Toyota Avanza</h3>
         <span>Rp 130.000.000</span>
-        <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <span>(2 unit)</span>  <!-- Teks dalam span terpisah -->
+        <div class="rating">
+            <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
         </div>
-        <a href="https://wa.me/6281336797929?text=Apakah%20Unit%20Masih%20Ready%3F" class="btn">Buy Now</a>
+        <!-- Dropdown WA -->
+        <select id="waChoice1" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA1()">
+          <option value="">Buy Now</option>
+          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+        </select>
         <a href="#" class="details">View Details</a>
-      </div>
+        </div>
+
       <!-- Box 2 -->
       <div class="box">
-        <img src="img/car7.png" alt="Toyota Avanza 2019">
+        <img src="img/car7.png" alt="Daihatsu Xenia 2019">
         <h3>Daihatsu Xenia</h3>
         <span>Rp 120.000.000</span>
-        <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <span>(3 unit)</span>  <!-- Teks dalam span terpisah -->
+        <div class="rating">
+          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
         </div>
-        <a href="https://wa.me/6281336797929?text=Apakah%20Unit%20Masih%20Ready%3F" class="btn">Buy Now</a>
+        <!-- Dropdown WA -->
+        <select id="waChoice2" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA2()">
+          <option value="">Buy Now</option>
+          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+        </select>
         <a href="#" class="details">View Details</a>
-      </div>
-      <!-- Box 3 -->
+        </div>
+      <!-- Box 3 - Honda Brio -->
       <div class="box">
-        <img src="img/car7.jpg" alt="">
+        <img src="img/car7.jpg" alt="Honda Brio">
         <h3>Honda Brio</h3>
         <span>Rp 100.000.000</span>
-        <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <span>(2 unit)</span>  <!-- Teks dalam span terpisah -->
+        <div class="rating">
+          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
         </div>
-        <a href="https://wa.me/6281336797929?text=Apakah%20Unit%20Masih%20Ready%3F" class="btn">Buy Now</a>
+        <!-- Dropdown WA -->
+        <select id="waChoice3" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA3()">
+          <option value="">Buy Now</option>
+          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+        </select>
         <a href="#" class="details">View Details</a>
-      </div>
+        </div>
+
       <!-- Box 4 -->
       <div class="box">
         <img src="img/car8.jpg" alt="">
         <h3>Mitsubishi Xpander</h3>
         <span>Rp 180.000.000</span>
         <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <span>(3 unit)</span>  <!-- Teks dalam span terpisah -->
+          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
         </div>
-        <a href="https://wa.me/6281336797929?text=Apakah%20Unit%20Masih%20Ready%3F" class="btn">Buy Now</a>
+        <!-- Dropdown WA -->
+        <select id="waChoice4" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA4()">
+          <option value="">Buy Now</option>
+          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+        </select>
         <a href="#" class="details">View Details</a>
-      </div>
+        </div>
       <!-- Box 5 -->
       <div class="box">
         <img src="img/car9.jpg" alt="">
         <h3>Suzuki Ertiga</h3>
         <span>Rp 130.000.000</span>
         <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <span>(2 unit)</span>  <!-- Teks dalam span terpisah -->
+          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
         </div>
-        <a href="https://wa.me/6281336797929?text=Apakah%20Unit%20Masih%20Ready%3F" class="btn">Buy Now</a>
+        <!-- Dropdown WA -->
+        <select id="waChoice5" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA5()">
+          <option value="">Buy Now</option>
+          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+        </select>
         <a href="#" class="details">View Details</a>
-      </div>
+        </div>
       <!-- Box 6 -->
       <div class="box">
         <img src="img/car10.png" alt="">
         <h3>Hyundai Creta</h3>
         <span>Rp 200.000.000</span>
         <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <span>(3 unit)</span>  <!-- Teks dalam span terpisah -->
+          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
         </div>
-        <a href="https://wa.me/6281336797929?text=Apakah%20Unit%20Masih%20Ready%3F" class="btn">Buy Now</a>
+        <select id="waChoice6" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA6()">
+          <option value="">Buy Now</option>
+          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+        </select>
         <a href="#" class="details">View Details</a>
-      </div>
+        </div>
     </div>
   </section>
   <!-- Blog Container -->
@@ -215,33 +216,33 @@
     <div class="heading">
       <span>Promo Mobil</span>
       <h2>Penawaran Harga Terbaik</h2>
-      <p>Promo Spesial! DP Ringan, Angsuran Ringan, Proses Cepat.</p>
+      <p>Promo Spesial! DP Minim, Angsuran Ringan, Proses Cepat Tanpa Tanda Jadi Sebelum ACC Free E-Toll Di Setiap Pembelian Unit </p>
     </div>
     <!-- Blog Container -->
     <div class="blog-container container">
       <!-- Box 1 -->
       <div class="box">
         <img src="img/cus0.jpeg" alt="">
-        <span>Apr 26 2025</span>
-        <h3>How To Get Perfect Car At Low Price</h3>
+        <!-- <span>Apr 26 2025</span> -->
+        <!-- <h3>How To Get Perfect Car At Low Price</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quia!</p>
-        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a> -->
       </div>
       <!-- Box 2 -->
       <div class="box">
         <img src="img/cus1.jpeg" alt="">
-        <span>Apr 26 2025</span>
+        <!-- <span>Apr 26 2025</span>
         <h3>How To Get Perfect Car At Low Price</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quia!</p>
-        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a> -->
       </div>
       <!-- Box 3 -->
       <div class="box">
         <img src="img/cus2.jpeg" alt="">
-        <span>Apr 26 2025</span>
+        <!-- <span>Apr 26 2025</span>
         <h3>How To Get Perfect Car At Low Price</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quia!</p>
-        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a> -->
       </div>
     </div>
   </section>
@@ -249,7 +250,7 @@
   <section class="footer">
     <div class="footer-container container">
       <div class="footer-box">
-        <a href="#" class="logo">Sriwijaya<span>Autocar</span></a>
+        <a href="#" class="logo">Sriwijaya<span>Autocars</span></a>
         <div class="social">
           <a href="#"><i class='bx bxl-facebook' ></i></a>
           <a href="#"><i class='bx bxl-twitter' ></i></a>
@@ -272,13 +273,15 @@
         
       </div>
       <div class="footer-box">
-        <h3>Contanct</h3>
+        <h3>Contact</h3>
         <!-- <p>United States</p>
         <p>Japan</p>
         <p>Germany</p> -->
+        <p>Allan: +6285755555458</p>
         <p>Andre: +6281336797929</p>
         <h3>Address</h3>
-        <p>Grand Surya Blok C-Raya no.18 <br>Sidoarjo</p>
+        <p>Grand Surya Blok C-Raya no.18 <br>Sedati Sidoarjo</p>
+        <P>Palem Pertiwi M 18 Menganti Gresik</P>
         <!-- <p>Australia</p>
         <p>Thailand</p> -->
       </div>
@@ -286,7 +289,7 @@
   </section>
   <!-- Copyright -->
   <div class="copyright">
-    <p>&#169; CV Sriwijaya Autocar. All Right Reserved</p>
+    <p>&#169; CV Sriwijaya Autocars. All Right Reserved</p>
   </div>
   <!-- Link To Js -->
   <script src="main.js"></script>
