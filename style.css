@@ -604,30 +604,25 @@ header.shadow #search-icon {
   font-weight: bold;
   cursor: pointer;
 }
-
 .close-btn:hover {
   color: #d90429;
 }
-
 .gallery-slider {
   position: relative;
   width: 100%;
   height: auto;
   margin: 20px 0;
 }
-
 .slide {
   display: none;
   text-align: center;
 }
-
 .slide img {
   max-width: 100%;
   max-height: 60vh;
   border-radius: 5px;
   object-fit: contain;
 }
-
 .image-caption {
   margin-top: 15px;
   font-size: 1.1rem;
@@ -636,12 +631,10 @@ header.shadow #search-icon {
   background-color: #f5f5f5;
   border-radius: 5px;
 }
-
 .gallery-controls {
   text-align: center;
   margin-top: 15px;
 }
-
 .prev-btn, .next-btn {
   cursor: pointer;
   background-color: #d90429;
@@ -652,11 +645,9 @@ header.shadow #search-icon {
   border-radius: 5px;
   font-size: 18px;
 }
-
 .prev-btn:hover, .next-btn:hover {
   background-color: #fd052f;
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .modal-content {
@@ -664,36 +655,29 @@ header.shadow #search-icon {
     margin: 10% auto;
     padding: 15px;
   }
-  
   .slide img {
     max-height: 50vh;
   }
-  
   .image-caption {
     font-size: 1rem;
   }
-  
   .prev-btn, .next-btn {
     padding: 8px 15px;
     font-size: 16px;
   }
 }
-
 @media (max-width: 480px) {
   .modal-content {
     margin: 15% auto;
     padding: 10px;
   }
-  
   .slide img {
     max-height: 40vh;
-  }
-  
+  } 
   .image-caption {
     font-size: 0.9rem;
   }
 }
-
 /* Improved Description Styles */
 .image-caption {
   font-size: 0.95rem;
@@ -704,7 +688,6 @@ header.shadow #search-icon {
   margin-top: 15px;
   text-align: left;
 }
-
 .image-caption h4 {
   color: #d90429;
   margin-bottom: 12px;
@@ -712,25 +695,21 @@ header.shadow #search-icon {
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
 }
-
 .specs-section {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
 .price-info {
   background: #fff;
   padding: 10px;
   border-radius: 6px;
   border-left: 4px solid #d90429;
 }
-
 .highlight {
   color: #d90429;
   font-weight: 600;
 }
-
 .disclaimer {
   font-size: 0.85rem;
   color: #666;
@@ -738,30 +717,25 @@ header.shadow #search-icon {
   padding: 8px 10px;
   border-radius: 6px;
 }
-
 .note {
   color: #d90429;
   font-weight: 500;
 }
-
 .vehicle-details h5, 
 .features h5 {
   margin: 10px 0 5px;
   font-size: 1rem;
   color: #444;
 }
-
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
-
 @media (max-width: 480px) {
   .feature-grid {
     grid-template-columns: 1fr;
   }
-  
   .image-caption {
     padding: 10px;
     font-size: 0.9rem;
