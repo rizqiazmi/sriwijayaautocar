@@ -9,6 +9,10 @@
    <link rel="stylesheet" href="style.css">
   <!-- Box Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <!-- Fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -39,7 +43,7 @@
     <section class="home" id="home">
       <div class="home-text">
         <h1>Mobil Impian Terpercaya <br> <span>Harga Terjangkau <br></span> Kualitas Terbaik</h1>
-        <p>Komitmen Showroom dalam memberikan pengalaman dan terasa nyaman <br>terhadap pelanggan dengan memberikan pilihan unit terbaik, yang sudah <br>lolos uji inspeksi mesin, bebas kecelakaan dan banjir. <br></p>
+        <p>Komitmen Showroom dalam memberikan pengalaman dan terasa <br>nyaman terhadap pelanggan dengan memberikan pilihan unit terbaik, <br>yang sudah lolos uji inspeksi mesin, bebas kecelakaan dan banjir. <br></p>
         <!-- Home Button -->
          <a href="#cars" class="btn">Discover Now</a>
       </div>
@@ -62,31 +66,26 @@
       <!-- Box 2 -->
       <div class="box">
         <img src="img/Logo_Daihatsu.png" alt="Audi">
-        <!-- <h2>Daihatsu</h2> -->
       </div>
 
       <!-- Box 3 -->
       <div class="box">
         <img src="img/Logo_Honda.png" alt="Audi">
-        <!-- <h2>Honda</h2> -->
       </div>
 
       <!-- Box 4 -->
       <div class="box">
         <img src="img/Logo_Mitsubishi.png" alt="Audi">
-        <!-- <h2>Mitsubishi</h2> -->
       </div>
 
       <!-- Box 5 -->
       <div class="box">
         <img src="img/Logo_Suzuki.png" alt="Audi">
-        <!-- <h2>Audi</h2> -->
       </div>
 
       <!-- Box 6 -->
       <div class="box">
         <img src="img/Logo_Hyundai.png" alt="Ford">
-        <!-- <h2>Ford</h2> -->
       </div>
     </div> 
   </section>
@@ -108,50 +107,463 @@
     <div class="heading">
       <span>Pilihan Mobil</span>
       <h2>Kami Menyediakan Unit Prima dan Berlegalitas</h2>
-      <p>Wujudkan Mobil Impian Anda Di Sriwijaya Autocar - Harga Terjangkau, Kuliatas Terpercaya</p>
+      <p>Wujudkan Mobil Impian Anda Di Sriwijaya Autocars - Harga Terjangkau, Kuliatas Terpercaya</p>
     </div>
-    <!-- Parts Container -->
+    <!-- Unit Container -->
     <div class="parts-container container">
-      <!-- Box 1 -->
+      <!-- Box 1 Toyota Avanza -->
       <div class="box">
         <img src="img/part7.png" alt="Toyota Avanza 2019">
         <h3>Toyota Avanza</h3>
-        <span>Rp 130.000.000</span>
         <div class="rating">
-            <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
+          <span>Kredit DP 5.000.000<br>Angsuran 3.780.000 x59 (5th)</span>
         </div>
-        <!-- Dropdown WA -->
-        <select id="waChoice1" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA1()">
-          <option value="">Buy Now</option>
-          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
-          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
-        </select>
-        <a href="#" class="details">View Details</a>
-        </div>
+      <!-- Dropdown WA -->
+      <select id="waChoice1" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA1()">
+        <option value="">Buy Now</option>
+        <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+        <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+      </select>
+      <!-- View Details -->
+      <a href="javascript:void(0)" class="details" onclick="openHorizontalGallery('daihatsu-xenia')">View Details</a>
+      <!-- Horizontal Gallery Modal -->
+      <div id="daihatsu-xenia-gallery-modal" class="horizontal-gallery-modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeGallery('daihatsu-xenia')">&times;</span>
+          
+          <div class="gallery-slider">
+            <div class="slide">
+              <img src="img/avanza/avanza_tampak_depan.jpeg" alt="Daihatsu Xenia Depan">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Depan</h4>
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <!-- Box 2 -->
+              <div class="slide">
+                <img src="img/avanza/avanza_tampak_kanan.jpeg" alt="Daihatsu Xenia Samping">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Depan Kanan</h4>     
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/avanza/avanza_tampak_belakang_kanan.jpeg" alt="Daihatsu Xenia Belakang">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Belakang Samping Kanan</h4>     
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/avanza/avanza_tampak_belakang.jpeg" alt="Daihatsu Xenia Belakang">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Belakang</h4>     
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/avanza/avanza_tampak_samping_kiri.jpeg" alt="Daihatsu Xenia Belakang">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Belakang Samping Kiri</h4>     
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/avanza/avanza_tampak_depan_kiri.jpeg" alt="Daihatsu Xenia Belakang">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Depan Kiri</h4>     
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/avanza/avanza_interior.jpeg" alt="Daihatsu Xenia Belakang">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Interior</h4>     
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="gallery-controls">
+            <button class="prev-btn" onclick="moveSlide('daihatsu-xenia', -1)">❮</button>
+            <button class="next-btn" onclick="moveSlide('daihatsu-xenia', 1)">❯</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Box 2 Daihatsu-->
       <div class="box">
-        <img src="img/car7.png" alt="Daihatsu Xenia 2019">
-        <h3>Daihatsu Xenia</h3>
-        <span>Rp 120.000.000</span>
-        <div class="rating">
-          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
+      <img src="img/car7.png" alt="Daihatsu Sigra 2011">
+      <h3>Daihatsu Xenia</h3>
+      <div class="rating">
+        <span>Paket Kredit DP 5.000.000<br>Angsuran 2.607.000 x59 (5th)</span>
+      </div>
+      <!-- Dropdown WA -->
+      <select id="waChoice2" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA2()">
+        <option value="">Buy Now</option>
+        <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
+        <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
+      </select>
+      <!-- View Details -->
+      <a href="javascript:void(0)" class="details" onclick="openHorizontalGallery('daihatsu-xenia')">View Details</a>
+
+        <!-- Horizontal Gallery Modal -->
+        <div id="daihatsu-xenia-gallery-modal" class="horizontal-gallery-modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeGallery('daihatsu-xenia')">&times;</span>
+            
+            <div class="gallery-slider">
+              <div class="slide">
+                <img src="img/avanza_tampak_depan.jpeg" alt="Daihatsu Xenia Depan">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Depan</h4>
+                  
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="slide">
+                <img src="img/avanza_tampak_kanan.jpeg" alt="Daihatsu Xenia Samping">
+                <div class="image-caption">
+                  <h4>Daihatsu Xenia - Tampak Kanan</h4>
+                  
+                  <div class="specs-section">
+                    <div class="price-info">
+                      <p><strong>TOYOTA AVANZA E 1.3 M/T 2018</strong></p>
+                      <p class="highlight">💰 Harga Kredit: Rp 145 JT</p>
+                      <p>🔹 DP Mulai: Rp 5 JT</p>
+                      <p>🔹 Angsuran: Rp 2.607.000 x 59 (5 Tahun)</p>
+                    </div>
+                
+                    <div class="disclaimer">
+                      <p><em>Untuk request DP/hitungan lain, silakan hubungi kami</em></p>
+                      <p><em>Harga kredit tertera adalah harga minimal untuk tenor 4-5 tahun</em></p>
+                      <p class="note">⚠️ Promo DP dapat berubah tanpa pemberitahuan sebelumnya</p>
+                    </div>
+
+                    <div class="vehicle-details">
+                      <h5>Detail Kendaraan:</h5>
+                      <ul>
+                        <li>✅ NIK 2018</li>
+                        <li>✅ Pajak Juli 2025</li>
+                        <li>✅ Atas nama pribadi (tangan pertama)</li>
+                        <li>✅ KM 40RB (rekaman TOYOTA)</li>
+                        <li>✅ Masih bergaransi</li>
+                      </ul>
+                    </div>
+                
+                    <div class="features">
+                      <h5>Spesifikasi:</h5>
+                      <div class="feature-grid">
+                        <span>🔹 Automatic</span>
+                        <span>🔹 Tipe tertinggi</span>
+                        <span>🔹 Hybrid</span>
+                        <span>🔹 Keyless</span>
+                        <span>🔹 Mesin bandel</span>
+                        <span>🔹 AC dobel blower</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="slide">
+                <img src="img/daihatsu-xenia-rear.jpg" alt="Daihatsu Xenia Belakang">
+                <div class="image-caption">Daihatsu Xenia - Tampak Belakang</div>
+              </div>
+              <div class="slide">
+                <img src="img/daihatsu-xenia-interior.jpg" alt="Daihatsu Xenia Interior">
+                <div class="image-caption">Daihatsu Xenia - Interior</div>
+              </div>
+            </div>
+            
+            <div class="gallery-controls">
+              <button class="prev-btn" onclick="moveSlide('daihatsu-xenia', -1)">❮</button>
+              <button class="next-btn" onclick="moveSlide('daihatsu-xenia', 1)">❯</button>
+            </div>
+          </div>
         </div>
-        <!-- Dropdown WA -->
-        <select id="waChoice2" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA2()">
-          <option value="">Buy Now</option>
-          <option value="https://wa.me/628123456789?text=Hallo%20Allan,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Allan</option>
-          <option value="https://wa.me/628987654321?text=Hallo%20Andre,%20saya%20tertarik%20dengan%20Toyota%20Avanza%202019">Andre</option>
-        </select>
-        <a href="#" class="details">View Details</a>
-        </div>
+      </div>
+
       <!-- Box 3 - Honda Brio -->
       <div class="box">
         <img src="img/car7.jpg" alt="Honda Brio">
         <h3>Honda Brio</h3>
-        <span>Rp 100.000.000</span>
         <div class="rating">
-          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
+          <span>Paket Kredit DP 8.000.000<br>Angsuran 3.560.000 5th</span>
         </div>
         <!-- Dropdown WA -->
         <select id="waChoice3" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA3()">
@@ -166,9 +578,8 @@
       <div class="box">
         <img src="img/car8.jpg" alt="">
         <h3>Mitsubishi Xpander</h3>
-        <span>Rp 180.000.000</span>
         <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
+          <span>Paket Kredit DP 8.000.000<br>Angsuran 3.560.000 5th</span>
         </div>
         <!-- Dropdown WA -->
         <select id="waChoice4" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA4()">
@@ -178,13 +589,13 @@
         </select>
         <a href="#" class="details">View Details</a>
         </div>
+
       <!-- Box 5 -->
       <div class="box">
         <img src="img/car9.jpg" alt="">
         <h3>Suzuki Ertiga</h3>
-        <span>Rp 130.000.000</span>
         <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
+          <span>Paket Kredit DP 8.000.000<br>Angsuran 3.560.000 5th</span>
         </div>
         <!-- Dropdown WA -->
         <select id="waChoice5" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA5()">
@@ -194,13 +605,13 @@
         </select>
         <a href="#" class="details">View Details</a>
         </div>
+        
       <!-- Box 6 -->
       <div class="box">
         <img src="img/car10.png" alt="">
         <h3>Hyundai Creta</h3>
-        <span>Rp 200.000.000</span>
         <div class="rating">  <!-- Tambah div wrapper untuk rating -->
-          <span>Paket Kredit DP 8.000.000 Angsuran 3.560.000 5th</span>
+          <span>Paket Kredit DP 8.000.000<br>Angsuran 3.560.000 5th</span>
         </div>
         <select id="waChoice6" class="btn" style="margin-bottom: 10px;" onchange="redirectToWA6()">
           <option value="">Buy Now</option>
@@ -231,18 +642,10 @@
       <!-- Box 2 -->
       <div class="box">
         <img src="img/cus1.jpeg" alt="">
-        <!-- <span>Apr 26 2025</span>
-        <h3>How To Get Perfect Car At Low Price</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quia!</p>
-        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a> -->
       </div>
       <!-- Box 3 -->
       <div class="box">
         <img src="img/cus2.jpeg" alt="">
-        <!-- <span>Apr 26 2025</span>
-        <h3>How To Get Perfect Car At Low Price</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quia!</p>
-        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a> -->
       </div>
     </div>
   </section>
@@ -270,20 +673,14 @@
         <a href="#">Privacy</a>
         <a href="#">Refund Policy</a>
         <a href="#">Cookie policy</a>
-        
       </div>
       <div class="footer-box">
         <h3>Contact</h3>
-        <!-- <p>United States</p>
-        <p>Japan</p>
-        <p>Germany</p> -->
         <p>Allan: +6285755555458</p>
         <p>Andre: +6281336797929</p>
         <h3>Address</h3>
         <p>Grand Surya Blok C-Raya no.18 <br>Sedati Sidoarjo</p>
         <P>Palem Pertiwi M 18 Menganti Gresik</P>
-        <!-- <p>Australia</p>
-        <p>Thailand</p> -->
       </div>
     </div>
   </section>

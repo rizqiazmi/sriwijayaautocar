@@ -80,8 +80,8 @@ function maximizeImageSize(img) {
   const windowHeight = window.innerHeight;
   const windowWidth = window.innerWidth;
   
-  const maxHeight = Math.min(windowHeight * 0.30, img.naturalHeight);
-  const maxWidth = Math.min(windowWidth * 0.20, img.naturalWidth);
+  const maxHeight = Math.min(windowHeight * 0.85, img.naturalHeight);
+  const maxWidth = Math.min(windowWidth * 0.95, img.naturalWidth);
   
   img.style.maxHeight = `${maxHeight}px`;
   img.style.maxWidth = `${maxWidth}px`;
