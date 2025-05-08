@@ -98,3 +98,78 @@ window.onclick = function(event) {
     }
   });
 };
+
+// Fungsi untuk redirect WhatsApp (Toyota Avanza - Box 1)
+function redirectToWA1() {
+  const selectElement = document.getElementById("waChoice1");
+  const selectedUrl = selectElement.value;
+  
+  if (selectedUrl) {
+    window.open(selectedUrl, '_blank'); // Buka di tab baru
+    selectElement.selectedIndex = 0; // Reset dropdown ke "Buy Now"
+  }
+}
+
+// Fungsi untuk redirect WhatsApp (Daihatsu Xenia - Box 2)
+function redirectToWA2() {
+  const selectElement = document.getElementById("waChoice2");
+  const selectedUrl = selectElement.value;
+  
+  if (selectedUrl) {
+    window.open(selectedUrl, '_blank');
+    selectElement.selectedIndex = 0;
+  }
+}
+
+// Fungsi untuk redirect WhatsApp (Daihatsu Xenia Brown - Box 3)
+function redirectToWA3() {
+  const selectElement = document.getElementById("waChoice3");
+  const selectedUrl = selectElement.value;
+  
+  if (selectedUrl) {
+    window.open(selectedUrl, '_blank');
+    selectElement.selectedIndex = 0;
+  }
+}
+
+// Fungsi untuk redirect WhatsApp (Daihatsu Sigra - Box 4)
+function redirectToWA4() {
+  const selectElement = document.getElementById("waChoice4");
+  const selectedUrl = selectElement.value;
+  
+  if (selectedUrl) {
+    window.open(selectedUrl, '_blank');
+    selectElement.selectedIndex = 0;
+  }
+}
+
+// Fungsi untuk redirect WhatsApp (Suzuki Ertiga - Box 5)
+function redirectToWA5() {
+  const selectElement = document.getElementById("waChoice5");
+  const selectedUrl = selectElement.value;
+  
+  if (selectedUrl) {
+    window.open(selectedUrl, '_blank');
+    selectElement.selectedIndex = 0;
+  }
+}
+
+// Fungsi untuk redirect WhatsApp (Daihatsu Xenia Red - Box 6)
+function redirectToWA6() {
+  const selectElement = document.getElementById("waChoice6");
+  const selectedUrl = selectElement.value;
+  
+  if (selectedUrl) {
+    window.open(selectedUrl, '_blank');
+    selectElement.selectedIndex = 0;
+  }
+}
+
+// Inisialisasi event listener saat halaman dimuat
+document.addEventListener('DOMContentLoaded', function() {
+  // Reset semua dropdown saat halaman dimuat
+  const waDropdowns = document.querySelectorAll('select[id^="waChoice"]');
+  waDropdowns.forEach(dropdown => {
+    dropdown.selectedIndex = 0;
+  });
+});
